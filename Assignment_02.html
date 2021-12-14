@@ -5,14 +5,40 @@
     <title>Assignment_02</title>
     <link href="assests/css/normalize.css" rel="stylesheet">
     <style>
+        body > header {
+            position: relative;
+            box-shadow: 10px 2px 6px 2px #bca8a8;
+        }
 
+        body > header > section:nth-child(1) > img {
+            width: 170px;
+            position: relative;
+            left: 22px;
+            top: 4px;
+        }
+
+        body > header > section:nth-child(2) > ul {
+            list-style: none;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 20px;
+            margin: auto;
+            height: 20px;
+        }
+
+        body > header > section:nth-child(2) > ul > li {
+            display: inline;
+            font-size: 18px;
+            padding: 0 5px 0 5px;
+        }
     </style>
 </head>
 <body>
 <header>
-    <seaction>
-        <img src="assests/img/ijse_logo.png" alt="institute of software enginnering logo">
-    </seaction>
+    <section>
+        <img alt="institute of software enginnering logo" src="assests/img/ijse_logo.png">
+    </section>
     <section>
         <ul>
             <li>Home</li>
@@ -33,9 +59,9 @@
     </section>
     <section>
         <div>
-            <img src="assests/img/other_pic_1.jpg" alt="some picture of IJSE">
-            <img src="assests/img/other_pic_1.jpg" alt="some picture of IJSE">
-            <img src="assests/img/other_pic_1.jpg" alt="some picture of IJSE">
+            <img alt="some picture of IJSE" src="assests/img/other_pic_1.jpg">
+            <img alt="some picture of IJSE" src="assests/img/other_pic_1.jpg">
+            <img alt="some picture of IJSE" src="assests/img/other_pic_1.jpg">
         </div>
         <div>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad expedita facilis illo, ipsa ipsam nam
