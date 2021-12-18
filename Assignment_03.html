@@ -5,13 +5,116 @@
     <title>Assignment_03</title>
     <link href="assests/css/normalize.css" rel="stylesheet">
     <style>
+        body > section {
+            width: 98vw;
+            height: 90vh;
+            border: 1px solid black;
+            position: relative;
+        }
 
+        body > section > div {
+            width: 200px;
+            height: 200px;
+            border: 1px solid red;
+            border-radius: 200px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            margin: auto;
+        }
+
+        body > section > div > h3 {
+            text-align: center;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            padding-top: 82px;
+            font-size: 30px;
+
+        }
+
+        #welcome {
+            font-size: 25px;
+        }
+
+        body > section > div > pre {
+            text-align: center;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            padding-top: 50px;
+        }
+
+        body > section:nth-child(1) > div {
+            background-color: rebeccapurple;
+        }
+
+        body > section:nth-child(2) > div {
+            background-color: cornflowerblue;
+        }
+
+        body > section:nth-child(3) > div {
+            background-color: coral;
+        }
+
+        body > section > div > h3 {
+            color: white;
+            font-weight: bold;
+        }
+
+        body > section > div > pre {
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        body>div>div{
+            width: 300px;
+            height: 300px;
+            border-radius: 250px;
+            border: 20px solid gray;
+            position: relative;
+            /*z-index: 1000;*/
+
+        }
+        body>div>div>div{
+            width: 250px;
+            height: 250px;
+            border-radius: 200px;
+            border: 25px solid red;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            /*z-index: 150;*/
+
+        }
     </style>
 </head>
 <body>
-<section></section>
-<section></section>
-<section></section>
-<section></section>
+<section>
+    <div>
+        <h3>Hello</h3>
+    </div>
+</section>
+<section>
+    <div>
+        <h3 id="welcome">Welcome To</h3>
+    </div>
+</section>
+<section>
+    <div>
+        <pre>Institute
+of
+Software
+Engineering</pre>
+    </div>
+</section>
+<div>
+    <div>
+        <div></div>
+    </div>
+</div>
 </body>
 </html>
