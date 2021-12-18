@@ -7,7 +7,7 @@
     <style>
         body > section {
             width: 98vw;
-            height: 90vh;
+            height: 100vh;
             border: 1px solid black;
             position: relative;
         }
@@ -21,7 +21,7 @@
             top: 0;
             bottom: 0;
             right: 0;
-            left: 0;
+            left: 14px;
             margin: auto;
         }
 
@@ -67,18 +67,23 @@
             font-weight: bold;
             font-size: 20px;
         }
-        body>div>div{
-            width: 300px;
-            height: 300px;
-            border-radius: 250px;
-            border: 20px solid gray;
-            position: relative;
-            /*z-index: 1000;*/
 
-        }
-        body>div>div>div{
+        body > div > div {
             width: 250px;
             height: 250px;
+            border-radius: 250px;
+            border: 20px solid gray;
+            position: fixed;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            margin: auto;
+        }
+
+        body > div > div > div {
+            width: 200px;
+            height: 200px;
             border-radius: 200px;
             border: 25px solid red;
             position: absolute;
@@ -87,8 +92,6 @@
             left: 0;
             right: 0;
             margin: auto;
-            /*z-index: 150;*/
-
         }
     </style>
 </head>
