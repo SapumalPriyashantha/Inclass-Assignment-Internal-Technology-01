@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment_11</title>
+    <link href="assests/css/normalize.css" rel="stylesheet">
+    <style>
+        section {
+            height: 100vh;
+            width: 100%;
+            background-image: url("assests/img/sky.jpg");
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        .road {
+            height: 200px;
+            width: 500%;
+            display: block;
+            background-image: url("assests/img/road.jpg");
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            z-index: 1;
+            animation: road 5s linear infinite;
+        }
+
+        @keyframes road {
+            100% {
+                transform: translateX(-3400px);
+            }
+        }
+    </style>
+</head>
+<body>
+<section>
+    <div class="road"></div>
+</section>
+</body>
+</html>
