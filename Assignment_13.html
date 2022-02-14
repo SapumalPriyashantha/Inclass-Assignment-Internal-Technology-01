@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <style>
+        body {
+            overflow-x: hidden;
+        }
+    </style>
+</head>
+<body>
+<h1>Hello there.. How are you..?</h1>
+<script src="assests/jQuery/jquery-3.6.0.min.js"></script>
+<script>
+
+    $("h1").css("position", "relative");
+
+
+    $(document).on("mousemove", function (event) {
+        $("h1").css("left", event.pageX);
+        $("h1").css("top", event.pageY);
+    });
+
+    let h1_text = $("h1").text();
+    var count = 0;
+
+    function animationText() {
+        $("h1").text(h1_text.substr(0, count));
+        count++;
+        if (count == h1_text.length) {
+            count = 0;
+        }
+    }
+
+    setInterval(animationText, 100);
+
+</script>
+</body>
+</html>
